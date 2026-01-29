@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 233, 249);
+}
+.container {
+    display: flex;
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    width: 100%;
+}
+.container .box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(0, 0, 0, 0.186);
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.219);
+    transition: transform 0.2s;
+    cursor: grab;
+}
+.container .box.background1 {
+    background-color: rgb(144, 8, 8);
+}
+.container .box.background2 {
+    background-color: rgb(5, 118, 11);
+}
+.container .box.background3 {
+    background-color: rgb(138, 84, 8);
+}
+.container .box.background4 {
+    background-color: rgb(67, 8, 144);
+}
+.container .box.background5 {
+    background-color: rgb(152, 138, 7);
+}
+.container .box.dragging {
+    opacity: 0.5;
+    background-color: black;
+}
