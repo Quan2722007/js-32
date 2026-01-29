@@ -45,3 +45,19 @@ body {
     opacity: 0.5;
     background-color: black;
 }
+@media only screen and (max-width: 945px) {
+    .container {
+        gap: 20px;
+        padding: 32px 15px;
+    }
+    .container .box {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .container .box {
+        width: 50px;
+        height: 50px;
+    }
+}
